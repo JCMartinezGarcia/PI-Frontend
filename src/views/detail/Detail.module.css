@@ -1,0 +1,113 @@
+.mainSection {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    background-image: url(https://images.unsplash.com/photo-1553640627-57a6de3bf0ff?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1033&q=80);
+    background-color: #cccccc;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 84rem;
+}
+
+.detailImage {
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+    background-size: cover;
+    background-size: 100% 100%;
+    /* height: auto; */
+    margin: 2rem;
+}
+
+.detailImage :hover {
+    height: 20rem;
+}
+
+.detailHead {
+    margin: auto;
+    background-color: black;
+    opacity: black;
+    display: grid;
+    grid-template-columns: 20% 80%;
+}
+
+.detailHeadTitle {
+    color: #fffefeb5;
+    opacity: 0.9;
+    font-size: xx-large;
+    margin: auto;
+    position: relative;
+    right: 5rem;
+}
+
+.detailTitle {
+    position: relative;
+    top: 23rem;
+    color: white;
+    opacity: 0.5;
+    font-size: xx-large;
+}
+
+
+.detailInfoCard {
+    margin: 2rem;
+    padding: 1rem;
+    background-color: #46424299;
+    color: white;
+}
+
+.detailCollapsible {
+    cursor: pointer;
+}
+
+.active,
+.detailCollapsible:hover {
+    background-color: #ccc;
+}
+
+/* Style the collapsible content. Note: hidden by default */
+.detailContentCollapsible {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
+    color: #464242;
+    /* Initial value */
+    scrollbar-gutter: auto;
+}
+
+.detailHomeButton {
+    width: 13rem;
+    height: 3rem;
+    border: 1px solid #00000069;
+    background-color: #00000069;
+    box-shadow: 1px 0px 12px 8px lightblue;
+    cursor: pointer;
+    color: white;
+}
+
+.detailHomeButton:hover {
+    transform: scale(0.8);
+    transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+    box-shadow: 1px 0px 12px 8px lightblue;
+    cursor: pointer;
+}
+
+.detailFooter {
+    margin: auto;
+    background-color: black;
+    opacity: 0.9;
+}
+
+.detailFooterInner {
+    margin: auto;
+    padding: 2rem;
+}
+
+.descriptionCont p {
+    padding: 1rem;
+}
+
+.ratingCont p {
+    color: gold;
+}

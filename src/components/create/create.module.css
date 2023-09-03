@@ -1,0 +1,119 @@
+.createInput {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.submitInput {
+    width: 21rem;
+    height: 3rem;
+    border: 1px solid #00000069;
+    background-color: #00000069;
+    box-shadow: 1px 0px 12px 8px lightblue;
+    cursor: pointer;
+    color: white;
+    position: relative;
+    top: 3rem;
+}
+
+.submitInput:hover {
+    transform: scale(0.8);
+    transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+    box-shadow: 1px 0px 12px 8px lightblue;
+    cursor: pointer;
+}
+
+
+.formCreate {
+    padding: 12rem;
+    background-image: url('https://www.pixelstalk.net/wp-content/uploads/2016/06/Video-game-characters-wallpapers-1080p.jpg');
+    position: relative;
+    background-color: #ccc;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.createFormContainer {
+    padding: 12rem;
+    background-image: url(https://images.unsplash.com/photo-1579199339853-eec461b791b6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=465&q=80);
+    position: relative;
+    background-color: #cccccc;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.formCreate label {
+    color: white;
+    font-weight: bold;
+}
+
+.formCreate p {
+    color: red;
+    font-weight: bolder;
+}
+
+.radioContainer {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.homeLink {
+    color: #ffffff42;
+    /* box-shadow: 1px 0px 12px 8px lightblue; */
+    position: relative;
+    bottom: 6rem;
+}
+
+.homeLink:hover {
+    color: #ffffffff;
+    cursor: pointer;
+}
+
+.linkHomeButton {
+    width: 13rem;
+    height: 3rem;
+    border: 1px solid #00000069;
+    background-color: #00000069;
+    box-shadow: 1px 0px 12px 8px lightblue;
+    cursor: pointer;
+    color: white;
+    position: relative;
+    bottom: 6rem;
+}
+
+.linkHomeButton:hover {
+    transform: scale(0.8);
+    transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+    box-shadow: 1px 0px 12px 8px lightblue;
+    cursor: pointer;
+}
+
+.createSuccessMsg {
+    color: green;
+    border: 1px solid green;
+    background-color: #0080002e;
+    width: 27rem;
+    height: 5rem;
+    position: relative;
+    top: 2rem;
+    right: 3rem;
+}
+
+.createErrorMsg {
+    color: red;
+    border: 1px solid red;
+    background-color: rgba(255, 0, 0, 0.212);
+    width: 27rem;
+    height: 5rem;
+    position: relative;
+    top: 2rem;
+    right: 3rem;
+}
