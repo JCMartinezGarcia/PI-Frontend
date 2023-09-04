@@ -9,7 +9,7 @@ import axios from 'axios';
 import './index.css';
 
 //axios.defaults.baseURL = "http://localhost:3001";
-axios.defaults.baseURL = "pi-backend-production-7d0d.up.railway.app";
+axios.defaults.baseURL = "https://pi-backend-production-7d0d.up.railway.app";
 
 ReactDOM.render(
   <React.StrictMode>
