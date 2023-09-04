@@ -1,0 +1,27 @@
+# Ignore Node.js modules
+node_modules/
+
+# Ignore logs and temporary files
+logs/
+*.log
+npm-debug.log*
+
+# Ignore environment-specific files
+.env
+.env.local
+.env.*.local
+
+# Ignore user-specific files
+.idea/
+.vscode/
+
+# Ignore OS-specific files
+.DS_Store
+Thumbs.db
+
+# Ignore package-lock files
+package-lock.json
+
+# Ignore dependency directories
+# You might want to adjust this if you have specific folders for dependencies
+public/
