@@ -9,7 +9,7 @@ import { cleanText } from '../utils/utils';
 const Detail = () => {
     /**get the id in url*/
     const { id } = useParams();
-    const URL = `http://localhost:3001/videogames/${id}`;
+    const URL = `/videogames/${id}`;
     /**local state */
     const [gameDetail, setGameDetail] = useState({});
     const [genre, setGenre] = useState([{}]);

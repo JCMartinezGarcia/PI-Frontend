@@ -1,11 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from 'react-router-dom';
 import { store } from './redux/store/index';
 import { Provider } from 'react-redux';
+import axios from 'axios';
+import './index.css';
+
+//axios.defaults.baseURL = "http://localhost:3001";
+axios.defaults.baseURL = "pi-backend-production-7d0d.up.railway.app";
 
 ReactDOM.render(
   <React.StrictMode>

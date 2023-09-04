@@ -53,7 +53,7 @@ const CreateForm = () => {
             const base64data = 'data:image/png;base64,' + reader.result.split(',')[1];
 
             try {
-                const { data } = await axios.post('http://localhost:3001/videogames/upload', { file: base64data, fname: name });
+                const { data } = await axios.post('/videogames/upload', { file: base64data, fname: name });
                 const { message, imageUrl, status } = data;
                 setUrlImage(imageUrl);
                 url = imageUrl;
@@ -71,7 +71,7 @@ const CreateForm = () => {
         data.image = url
         const postObject = data;
         try {
-            const response = await axios.post('http://localhost:3001/videogames/', postObject);
+            const response = await axios.post('/videogames/', postObject);
             if (response.statusText === "OK") {
                 notify();
                 setTimeout(() => {
