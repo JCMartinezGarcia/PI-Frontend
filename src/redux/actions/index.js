@@ -3,10 +3,10 @@ import { GET_ALL_GAMES, GET_GAME_BY_NAME, GET_GENRES, GET_PLATFORMS } from '../a
 import axios from 'axios';
 
 /**endpoints */
-const GET_ALL_VIDEO_GAMES = 'http://localhost:3001/videogames/';
-const GET_VIDEO_GAME_BY_NAME = 'http://localhost:3001/videogames/';
-const GET_ALL_GENRES = 'http://localhost:3001/genres/';
-const GET_ALL_PLATFORMS = 'http://localhost:3001/platforms/';
+const GET_ALL_VIDEO_GAMES = '/videogames/';
+const GET_VIDEO_GAME_BY_NAME = '/videogames/';
+const GET_ALL_GENRES = '/genres/';
+const GET_ALL_PLATFORMS = '/platforms/';
 
 export const getAllVideoGames = () => {
     return async (dispatch) => {
