@@ -34,9 +34,12 @@ function Card({ videoGame }) {
                 <div className={`${style.cardContainer} ${style.cardImage}`} style={{ backgroundImage: `url(${image})` }}>
                 </div>
             </Link>
-            <p>
-                <span className={style.cardName}>{name}</span>
-            </p>
+            <br />
+            <div className={style.cardNameCont}>
+                <p>
+                    <span className={style.cardName}>{name}</span>
+                </p>
+            </div>
             <div className={style.ratingCont}>
                 {
                     ratingStar?.map((el) => {

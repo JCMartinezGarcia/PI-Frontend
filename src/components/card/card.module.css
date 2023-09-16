@@ -45,3 +45,16 @@
     margin: 1rem;
     color: gold;
 }
+
+.cardNameCont {
+    width: 100%;
+}
+
+.cardNameCont p {
+    white-space: nowrap;
+    width: 200px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: auto;
+    color: #b2c4d4;
+}
