@@ -2,5 +2,8 @@
     display: grid;
     grid-template-columns: auto auto auto;
     padding: 1rem 1rem 1rem 2rem;
-    
+}
+
+.loaderCont {
+    padding: 10rem;
 }

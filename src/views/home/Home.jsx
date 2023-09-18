@@ -14,12 +14,10 @@ import {
 /**Utils */
 
 const Home = () => {
-    /**this are the subscriptions to states */
     const dispatch = useDispatch();
     const allVideoGames = useSelector((state) => state.allvideoGames);
     const allPlatforms = useSelector((state) => state.allPlatforms);
     const allGenres = useSelector((state) => state.allGenres);
-    /**this are the local states  */
     const [searchString, setSearchString] = useState("");
     const [filtered, setFiltered] = useState([{}]);
     const [allVideoGamesCopy, setAllVideoGamesCopy] = useState([{}]);
@@ -31,12 +29,10 @@ const Home = () => {
     const [sortByFilterValue, setSortByFilterValue] = useState('');
     const totalElements = 12;
     let totalPages = Math.ceil((allVideoGames.length - 1) / totalElements);
-    // Reemplaza con el número total real de páginas
     useEffect(() => {
         dispatch(getAllVideoGames());
         dispatch(getAllGenres());
         dispatch(getAllPlatforms());
-        /**if the arr is empty gets in */
         setCurrentPage(1);
     }, []);
 
@@ -66,9 +62,7 @@ const Home = () => {
     const handlePageChange = (number, angles = '') => {
         setCurrentPage(number);
         Paginate(number, angles, totalElements);
-        // Puedes realizar cualquier búsqueda de datos o actualización necesaria aquí en función del número de página seleccionado
     };
-    /**filtro desde la BD */
     const handleChange = (e) => {
         e.preventDefault();
         const { value } = e.target;
@@ -114,25 +108,6 @@ const Home = () => {
 
         }
         setCurrentPage(1);
-        /* if (filteredExist) {
-             setTimeout(() => {
-                 setFilterExist(false);
-                 setFiltered([{}]);
-             }, 1 * 1000);
- 
-         }*/
-        /*
-        let filteredGameList = applyGenderFilter(allVideoGames, {
-            genre: value,
-            search: searchString,
-            source: sourceFilterValue,
-            order: orderByFilterValue,
-            sort: sortByFilterValue
-        });
-        setAllVideoGamesCopy(filteredGameList);
-        setFiltered(filteredGameList.slice(0, totalElements));
-        setCurrentPage(1);
-        setFilterExist(true);*/
 
     }
     const handleSrcChange = (e) => {
