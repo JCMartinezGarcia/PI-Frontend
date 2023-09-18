@@ -1,6 +1,7 @@
 /**import components */
-import NotResults from "../notFoundResults/NotResults";
 import Card from "../card/card";
+//import { useState, CSSProperties } from "react";
+import MoonLoader from "react-spinners/ClipLoader";
 import style from './cards.module.css';
 
 const Cards = ({ allVideoGames }) => {
@@ -13,7 +14,10 @@ const Cards = ({ allVideoGames }) => {
                 (listVideoGames.length) ?
                     (listVideoGames)?.map((game, index) => {
                         return <Card key={index} videoGame={game} />
-                    }) : <NotResults />
+                    }) : <div className={style.loaderCont}><MoonLoader
+                        color="#36d7b7"
+                        size={117}
+                    /></div>
             }
         </div>
     )
