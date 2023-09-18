@@ -1,6 +1,5 @@
 /**import components */
 import Card from "../card/card";
-//import { useState, CSSProperties } from "react";
 import MoonLoader from "react-spinners/ClipLoader";
 import style from './cards.module.css';
 
